@@ -1,4 +1,4 @@
-// Package fraction finds rational approximations to real numbers.
+// Package fraction approximates fractions from floats.
 package fraction
 
 // Fraction returns the numerator, denominator and error of v, limiting the
