@@ -1,6 +1,9 @@
 // Package fraction approximates fractions from floats.
 package fraction
 
+// math.MaxFloat64
+const maxFloat64 = 1.797693134862315708145274237317043567981e+308 // 2**1023 * (2**53 - 1) / 2**52
+
 // Fraction returns the numerator, denominator and error of v, limiting the
 // denominator to a maximum of d. If the provided value of d is less than 1, it
 // defaults to 10. If v is negative, the numerator will be negative.
@@ -34,7 +37,7 @@ func Fraction(v float64, d int64) (int64, int64, float64) {
 		ai = int64(x)
 
 		// Handle representation failure.
-		if x > float64(0x7FFFFFFF) {
+		if x > maxFloat64 {
 			break
 		}
 	}
