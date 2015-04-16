@@ -4,11 +4,3 @@ fraction
 Approximate fractions from floats.
 
 Modeled after https://www.ics.uci.edu/~eppstein/numth/frap.c.
-
-Note
-----
-
-I feel like this is probably already implemented in the standard library. I
-took a look at `Rat` from `math/big` but didn't have any luck.
-
-http://play.golang.org/p/6ht0tn5xKH
